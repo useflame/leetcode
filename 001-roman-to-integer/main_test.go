@@ -20,7 +20,7 @@ func TestRomanToInt(t *testing.T) {
 	for _, item := range testTable {
 		output := RomanToInt(item.input)
 		if output != item.output {
-			t.Errorf("got :%d; want: %d", output, item.output)
+			t.Errorf("Got: %v, want: %v.", output, item.output)
 		}
 	}
 }

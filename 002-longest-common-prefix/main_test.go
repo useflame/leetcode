@@ -11,8 +11,6 @@ func TestLongestCommonPrefix(t *testing.T) {
 	}{
 		{[]string{"flower", "flow", "flight"}, "fl"},
 		{[]string{"dog", "racecar", "car"}, ""},
-		// {[]string{"racecar", "racecar", "racecar"}, "racecar"},
-		// {[]string{"racecar", "acecar", "acecar"}, "acecar"},
 		{[]string{"reflower", "flow", "flight"}, ""},
 		{[]string{"a"}, "a"},
 	}
@@ -20,7 +18,7 @@ func TestLongestCommonPrefix(t *testing.T) {
 	for _, item := range testTable {
 		output := LongestCommonPrefix(item.input)
 		if output != item.output {
-			t.Errorf("got :%s; want: %s", output, item.output)
+			t.Errorf("Got: %s, want: %s.", output, item.output)
 		}
 	}
 }
